@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+body {
+    box-sizing: border-box;
+    background: url(../assets/home/background-home-desktop.jpg) no-repeat center;
+    font-family: var(--barlow);
+}
+
+* {
+    margin: 0;
+    font-family: var(--barlow);
+}
+
+:root {
+    --dark-blue: #0B0D17;
+    --light-blue: #D0D6F9;
+    --white: #FFFFFF;
+    --heading1: 150px;
+    --heading2: 100px;
+    --heading3: 56px;
+    --heading4: 32px;
+    --heading5: 28px;
+    --sub-heading1: 28px;
+    --sub-heading2: 14px;
+    --nav-text: 16px;
+    --body-text: 18px;
+    --barlow: 'Barlow Condensed', sans-serif;
+    --bellefair: 'Bellefair', serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 60px 0 40px 90px;
+    font-size: var(--nav-text);
+    letter-spacing: 2.7px;
+    position: relative;
+}
+
+hr {
+    width: 29.5%;
+    border-style: none;
+    border-top-style: solid;
+    border-color: #979797;
+    position: absolute;
+    left: 200px;
+    opacity: 0.3;
+}
+
+.nav-tabs {
+    background-color: rgba(151, 151, 151, 0.3);
+    width: 53%;
+    padding: 25px 0px 25px 60px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+}
+
+.nav-tabs li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 0 0 25px;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-tabs .active {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 25px;
+}
+
+.nav-tabs a:active {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 25px;
+}
+
+.nav-tabs a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 25px;
+}
+
+main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+
+h1 {
+    font-size: var(--heading1);
+    font-family: var(--bellefair);
+    color: var(--white);
+    padding: 20px 0 15px 0;
+}
+
+h5 {
+    color: var(--light-blue);
+    font-size: var(--heading5);
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--light-blue);
+    font-size: var(--body-text);
+    width: 350px;
+    line-height: 1.4;
+}
+
+.explore-btn {
+    border: none;
+    width: 274px;
+    height: 274px;
+    color: var(--dark-blue);
+    background-color: var(--white);
+    border-radius: 50%;
+    font-size: var(--heading4);
+}
+
+.explore-btn:hover {
+    border: 55px solid rgba(151, 151, 151, 0.9);
+}
+
+.explore-btn:active {
+    border: 55px solid rgba(151, 151, 151, 0.3);
+}
+
+@media screen and (min-width:768px) {
+
+    body {
+        background: url(../assets/home/background-home-tablet.jpg) no-repeat center;
+        
+    }
+
+    nav {
+        padding: 0 0 40px 30px;
+        font-size: 14px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .nav-img {
+        margin-top: 25px;
+    }
+
+    .nav-tabs {
+        background-color: rgba(151, 151, 151, 0.3);
+        width: 50%;
+        padding: 35px 0px 25px 10px;
+    }
+
+    .nav-tabs span {
+        display: none;
+    }
+
+    .nav-tabs .active {
+        padding-bottom: 23px;
+    }
+    
+    main {
+        display: block;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    p {
+        margin: auto;
+        font-size: var(--nav-text);
+    }
+
+    .explore {
+        margin-top: 3em;
+    }
+}

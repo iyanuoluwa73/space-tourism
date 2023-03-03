@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+body {
+    box-sizing: border-box;
+    background: url(../assets/destination/background-destination-desktop.jpg) no-repeat center;
+    font-family: var(--barlow);
+}
+
+* {
+    margin: 0;
+    font-family: var(--barlow);
+}
+
+:root {
+    --dark-blue: #0B0D17;
+    --light-blue: #D0D6F9;
+    --white: #FFFFFF;
+    --heading1: 150px;
+    --heading2: 100px;
+    --heading3: 56px;
+    --heading4: 32px;
+    --heading5: 28px;
+    --sub-heading1: 28px;
+    --sub-heading2: 14px;
+    --nav-text: 16px;
+    --body-text: 18px;
+    --barlow: 'Barlow Condensed', sans-serif;
+    --bellefair: 'Bellefair', serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 40px 0 40px 90px;
+    font-size: var(--nav-text);
+    letter-spacing: 2.7px;
+    position: relative;
+}
+
+.nav hr {
+    width: 29.5%;
+    border-style: none;
+    border-top-style: solid;
+    border-color: #979797;
+    position: absolute;
+    left: 200px;
+    opacity: 0.3;
+}
+
+.nav-tabs {
+    background-color: rgba(151, 151, 151, 0.3);
+    width: 53%;
+    padding: 25px 0px 25px 60px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+}
+
+.nav-tabs li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 0 0 25px;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-tabs .active {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 25px;
+}
+
+.nav-tabs a:active {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 25px;
+}
+
+.nav-tabs a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 25px;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin: 5em 5em 0;
+}
+
+span {
+    color: #979797;
+    padding-right: 0.5em;
+}
+
+h5 {
+    color: var(--white);
+    font-size: var(--heading5);
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    margin: 2em 0 0 7em;
+}
+
+.destination-nav {
+    display: flex;
+    padding: 0;
+    font-size: var(--nav-text);
+    letter-spacing: 2.7px;
+}
+
+.destination-nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 0 0 25px;
+}
+
+.destination-nav a {
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+.destination-nav .active {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 15px;
+}
+
+a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 15px;
+}
+
+.destination-p {
+    text-transform: none;
+    width: 350px;
+    font-size: var(--body-text);
+    color: var(--light-blue);
+    line-height: 1.4;
+}
+
+.about-destination h2 {
+    font-family: var(--bellefair);
+    color: var(--white);
+    font-size: var(--heading2);
+    margin: 0.5em 0 0.1em;
+}
+
+hr {
+    border-style: none;
+    border-top-style: solid;
+    border-color: #979797;
+    border-width: 2px;
+    opacity: 0.3;
+    margin: 2em 0;
+}
+
+.destination-info {
+    color: var(--light-blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.distance h6,
+.time h6 {
+    font-size: var(--sub-heading2);
+}
+
+.distance p, 
+.time p {
+    font-size: var(--sub-heading1);
+}
+
+@media screen and (min-width:768px) {
+    main {
+        display: block;
+    }
+}

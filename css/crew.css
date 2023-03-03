@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+body {
+    box-sizing: border-box;
+    background: url(../assets/home/background-home-desktop.jpg) no-repeat center;
+    font-family: var(--barlow);
+}
+
+* {
+    margin: 0;
+    font-family: var(--barlow);
+}
+
+:root {
+    --dark-blue: #0B0D17;
+    --light-blue: #D0D6F9;
+    --white: #FFFFFF;
+    --heading1: 150px;
+    --heading2: 100px;
+    --heading3: 56px;
+    --heading4: 32px;
+    --heading5: 28px;
+    --sub-heading1: 28px;
+    --sub-heading2: 14px;
+    --nav-text: 16px;
+    --body-text: 18px;
+    --barlow: 'Barlow Condensed', sans-serif;
+    --bellefair: 'Bellefair', serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 60px 0 40px 90px;
+    font-size: var(--nav-text);
+    letter-spacing: 2.7px;
+    position: relative;
+}
+
+hr {
+    width: 29.5%;
+    border-style: none;
+    border-top-style: solid;
+    border-color: #979797;
+    position: absolute;
+    left: 200px;
+    opacity: 0.3;
+}
+
+.nav-tabs {
+    background-color: rgba(151, 151, 151, 0.3);
+    width: 53%;
+    padding: 25px 0px 25px 60px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+}
+
+.nav-tabs li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 0 0 25px;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-tabs .active {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 25px;
+}
+
+.nav-tabs a:active {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 25px;
+}
+
+.nav-tabs a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 25px;
+}
+
+main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 2em 1em 0 9em;
+    margin: 0;
+}
+
+span {
+    color: #979797;
+    padding-right: 0.5em;
+}
+
+h5 {
+    color: var(--white);
+    font-size: var(--heading5);
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+}
+
+.crew-info {
+    margin: 9em 0 5em ;
+}
+
+h4 {
+    font-family: var(--bellefair);
+    font-size: var(--heading4);
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    font-family: var(--bellefair);
+    font-size: var(--heading3);
+    color: var(--white);
+    text-transform: uppercase;
+    padding-bottom: 0.7em;
+}
+
+p {
+    text-transform: none;
+    width: 350px;
+    font-size: var(--body-text);
+    color: var(--light-blue);
+    line-height: 1.4;
+} 
+
+.crew-tabs li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.crew-tabs a {
+    text-decoration: none;
+    color: black;
+    font-size: 96px; /* The size of the dots */
+    letter-spacing: 5px; 
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.crew-tabs .active {
+    color: var(--white);
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
